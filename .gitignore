@@ -6,6 +6,8 @@ ENV/
 # VS Code internals (ignoring user state, keeping configurations)
 .vscode/.DS_Store
 .vscode/launch.json
+.vscode/.hashes/
+.vscode/project-state.json
 
 # Python caching and logs
 __pycache__/
@@ -13,3 +15,7 @@ __pycache__/
 *.pyo
 *.pyd
 .pytest_cache/
+
+# Local OS files
+.DS_Store
+Thumbs.db
