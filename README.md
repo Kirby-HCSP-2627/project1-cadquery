@@ -1,6 +1,4 @@
-# project0-setup
-## This file is very important!
-Here you will find all the instructions for your assignment and they will loosely follow this structure.<br/>
+# project1-setup
 
 ### INSTALL (Run this first)
 For every new assignment, your first step is to run the following commands in your terminal in vscode<br/>
