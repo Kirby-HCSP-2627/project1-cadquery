@@ -2,7 +2,7 @@
 # Name: 
 # Don't change the next 2 lines! 
 import cadquery as cq
-from cadquery.vis import show
+from ocp_vscode import show
 
 # Example base object code. Run it once to check if everything works! 
 height = 60.0
