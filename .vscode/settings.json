@@ -1,10 +1,6 @@
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
-  "python.terminal.activateEnvInSelectedTerminal": true,
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "python.testing.pytestArgs": [
-    "."
-  ],
-  "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true
+  "python.defaultInterpreterPath": "project1-cadquery",
+  "python.analysis.extraPaths": [],
+  "ocpCadViewer.host": "127.0.0.1",
+  "ocpCadViewer.port": 3939
 }
