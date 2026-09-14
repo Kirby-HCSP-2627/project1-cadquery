@@ -2,5 +2,7 @@
   "python.defaultInterpreterPath": "project1-cadquery",
   "python.analysis.extraPaths": [],
   "ocpCadViewer.host": "127.0.0.1",
-  "ocpCadViewer.port": 3939
+  "ocpCadViewer.port": 3939,
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda"
 }
