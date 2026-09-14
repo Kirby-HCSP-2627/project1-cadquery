@@ -1,25 +1,52 @@
 # project1-setup
 
 ### INSTALL (Run this first)
-For every new assignment, your first step is to run the following commands in your terminal in vscode<br/>
-If you are copying and pasting, don't include the \<br/\> characters
-For MAC:<br/>
-python3 -m venv .venv <br/>
-source .venv/bin/activate <br/>
-pip install --upgrade pip <br/>
-pip install -r requirements.txt <br/>
-
-For WINDOWS:<br/>
-python -m venv .venv <br/>
-.venv\Scripts\Activate.ps1 <br/>
-python -m pip install --upgrade pip <br/>
-pip install -r requirements.txt <br/>
+Make sure you open your terminal while in your projects folder. 
+Run the commands, one at a time: 
+```bash
+mamba env create -f environment.yaml
+```
+```bash
+mamba activate project1-cadquery
+```
+If you receive a **"Shell not initialized"** error when running the activate command, run this to grant Mamba permission to manage your terminal:
+```bash
+mamba shell init --shell zsh --root-prefix=/opt/homebrew/Caskroom/miniforge/base
+```
+If you are running Windows use this command instead
+```bash
+mamba shell init --shell powershell --root-prefix=/opt/homebrew/Caskroom/miniforge/base
+```
+After running the initialization command, **fully close your terminal window**, open a fresh one, navigate back into your folder, and run
+```bash
+mamba activate project1-cadquery
+```
+You will know it works if you see (project1-cadquery) in the left side of your command line. <br/>
+We are almost there! You will get some pop-ups to install extensions. Install all of them. <br/>
+Finally, on the left vertical side bar find the ocp extension. Click the select python interpreter. Choose the project1-cadquery option.
 
 ### Intro
 This section will be a short description of the project and what it will be testing. <br/>
 
 ### Relevant Info
-This section will provide any relevant info or specific functions I want you to use in your project. <br/>
+Use the documentation found [here.](https://cadquery.readthedocs.io/en/latest/) I found the QuickStart and Examples sections the most useful!
+
+```python
+# In general you will want to set your dimensions in a section like this
+height = 60.0
+width = 80.0
+thickness = 10.0
+diameter = 22.0
+
+#Then use the result and combination of commands to make the base 
+result = (
+    cq.Workplane("XY")
+    .box(height, width, thickness)
+    .faces(">Z") # Selects top-most face
+    .workplane() # Starts a new workplace on the selected face
+    .hole(diameter) # Makes a hole on the new workplace
+)
+```
 
 ### The Program
 This section will have actual instructions for your project. Usually, in the format of expected inputs and expected results. 
