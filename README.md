@@ -9,7 +9,8 @@
 conda init
 ```
 
-[For M series Mac, Click Here](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.pkg) (If you are unsure, ask me)
+[For M series Mac, Click Here](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.pkg) (If you are unsure, ask me) <br/>
+No extra steps for you! 
 
 #### Setup your vscode
 Before you start, clone the directory into your folder.<br/>
