@@ -7,5 +7,5 @@ dependencies:
   - cadquery
   - pip
   - pip:
-    - ocp-vscode==4.0.1
+    - ocp-vscode==4.1.0
     - ipykernel
