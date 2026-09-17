@@ -3,6 +3,11 @@
 ### INSTALL (Run this first)
 #### Install Mamba
 [For Windows, Click Here](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe)
+1. Next, open Miniforge Prompt from Windows Start Menu
+2. Type:
+```bash
+conda init
+```
 
 [For M series Mac, Click Here](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.pkg) (If you are unsure, ask me)
 
