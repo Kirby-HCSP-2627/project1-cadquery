@@ -42,20 +42,18 @@ Finally, on the left vertical side bar find the ocp extension. Click the select 
 Use the documentation found [here.](https://cadquery.readthedocs.io/en/latest/) I found the QuickStart and Examples sections the most useful!
 
 ```python
-# In general you will want to set your dimensions in a section like this
-height = 60.0
-width = 80.0
-thickness = 10.0
-diameter = 22.0
+# Create the base box using our dimensions
+body = cq.Workplane("XY").box(100, 75, 50, centered=(True, True, False)) # Last value is false because we aren't working on z-axis
 
-#Then use the result and combination of commands to make the base 
-result = (
+pocket1 = (
     cq.Workplane("XY")
-    .box(height, width, thickness)
-    .faces(">Z") # Selects top-most face
-    .workplane() # Starts a new workplace on the selected face
-    .hole(diameter) # Makes a hole on the new workplace
+    .workplane(offset=10) # Why would I need an offset? 
+    .box(60 , 40, 20, centered=(True, True, False))  # Creates box at center
+    .translate((-50, 30, 0)) # Move the center to the left 50mm and up 30mm
 )
+
+# Cut from the body
+organizer = body.cut(pocket1) # If you have multiple you can call .cut() more than once Ex. body.cut(pocket1).cut(pocket2).cut(pocket3)
 ```
 
 ### The Program
