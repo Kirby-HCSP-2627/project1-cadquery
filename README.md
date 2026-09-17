@@ -38,9 +38,6 @@ You will know it works if you see (project1-cadquery) in the left side of your c
 We are almost there! You will get some pop-ups to install extensions. Install all of them. <br/>
 Finally, on the left vertical side bar find the ocp extension. Click the select python interpreter. Choose the project1-cadquery option.
 
-### Intro
-Coming soon! 
-
 ### Relevant Info
 Use the documentation found [here.](https://cadquery.readthedocs.io/en/latest/) I found the QuickStart and Examples sections the most useful!
 
