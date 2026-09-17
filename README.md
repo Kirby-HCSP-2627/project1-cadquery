@@ -1,6 +1,13 @@
 # project1-setup
 
 ### INSTALL (Run this first)
+#### Install Mamba
+[For Windows, Click Here](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe)
+
+[For M series Mac, Click Here](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.pkg) (If you are unsure, ask me)
+
+#### Setup your vscode
+Before you start, clone the directory into your folder.<br/>
 Make sure you open your terminal while in your projects folder. 
 Run the commands, one at a time: 
 ```bash
