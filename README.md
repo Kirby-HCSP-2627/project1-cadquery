@@ -39,7 +39,7 @@ We are almost there! You will get some pop-ups to install extensions. Install al
 Finally, on the left vertical side bar find the ocp extension. Click the select python interpreter. Choose the project1-cadquery option.
 
 ### Intro
-This section will be a short description of the project and what it will be testing. <br/>
+Coming soon! 
 
 ### Relevant Info
 Use the documentation found [here.](https://cadquery.readthedocs.io/en/latest/) I found the QuickStart and Examples sections the most useful!
