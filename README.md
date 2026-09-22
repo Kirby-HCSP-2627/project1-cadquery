@@ -24,11 +24,11 @@ mamba activate project1-cadquery
 ```
 If you receive a **"Shell not initialized"** error when running the activate command, run this to grant Mamba permission to manage your terminal:
 ```bash
-mamba shell init --shell zsh --root-prefix=/opt/homebrew/Caskroom/miniforge/base
+mamba shell init --shell zsh --root-prefix=~/miniforge3
 ```
 If you are running Windows use this command instead
 ```bash
-mamba shell init --shell powershell --root-prefix=/opt/homebrew/Caskroom/miniforge/base
+mamba shell init --shell powershell --root-prefix=$env:USERPROFILE\miniforge3
 ```
 After running the initialization command, **fully close your terminal window**, open a fresh one, navigate back into your folder, and run
 ```bash
