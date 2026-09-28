@@ -60,7 +60,7 @@ organizer = body.cut(pocket1) # If you have multiple you can call .cut() more th
 Your task is to design a fully functional, 3D-printable parametric desk organizer using Python and the CadQuery script-based CAD modeling library. Instead of using drag-and-drop modeling software, you will write code to generate the 3D geometry mathematically. Your final code must be parametric, meaning that changing a few top-level variables (like wall thickness or compartment depths) will automatically resize the entire organizer without breaking the model. <br/><br/>
 
 Your python script must output a single, modular 3D object that complies with the following constraints:<br/>
-1. The base dimensions of the desk organizer can be no larger than 8 inches by 8 inches.
+1. The base dimensions of the desk organizer can be no larger than 200 x 200 x 200 mm. 
 2. Must feature a compartment capable of holding at least 10 pencils or pens.
 3. Dedicated slots to securely hold at least 5 markers, think sharpies or highlighters.
 4. A container/tray area designed to hold loose, small items like paper clips and binder clips.
